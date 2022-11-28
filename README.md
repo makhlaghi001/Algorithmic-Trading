@@ -94,43 +94,7 @@ In the previous sections, you updated your `README.md` file with your conclusion
 
 our first orginal model with short window of 4 days and long window of 100 days,and the model produced a recall value of 56%. Thus making the chosen SMA pramateres a decent model. 
 
-Original Actual retrun are posted below. 
 
-    	                  close	Actual Returns
-date		
-2015-01-21 11:00:00	23.98	0.006295
-2015-01-22 15:00:00	24.42	0.018349
-2015-01-22 15:15:00	24.44	0.000819
-2015-01-22 15:30:00	24.46	0.000818
-2015-01-26 12:30:00	24.33   -0.005315
-                           
-                           close	Actual Returns
-date		
-2021-01-22 09:30:00	33.27   -0.006866
-2021-01-22 11:30:00	33.35	0.002405
-2021-01-22 13:45:00	33.42	0.002099
-2021-01-22 14:30:00	33.47	0.001496
-2021-01-22 15:45:00	33.44   -0.00089
-
-
-7 and 50 SMA model posted below
-
-	                  sma_fast	         sma_slow
-date		
-2015-02-23 15:30:00	24.477143	24.2200
-2015-02-23 15:45:00	24.472857	24.2302
-2015-02-24 10:45:00	24.507143	24.2362
-2015-02-24 11:00:00	24.541429	24.2422
-2015-02-24 12:15:00	24.570000	24.2470
-...	...	...
-2021-01-22 09:30:00	33.065714	31.2232
-2021-01-22 11:30:00	33.165714	31.2848
-2021-01-22 13:45:00	33.247143	31.3480
-2021-01-22 14:30:00	33.292857	31.4132
-2021-01-22 15:45:00	33.345714	31.4768
-
-
-    
     precision    recall  f1-score   support
 
         -1.0       0.43      0.04      0.07      1804
