@@ -71,7 +71,9 @@ precision    recall  f1-score   support
          1.0       0.64      1.00      0.78        38
 
     accuracy                           0.64        59
+   
    macro avg       0.32      0.50      0.39        59
+
 weighted avg       0.41      0.64      0.50        59
 
 
@@ -101,7 +103,9 @@ our first orginal model with short window of 4 days and long window of 100 days,
          1.0       0.56      0.96      0.71      2288
 
     accuracy                           0.55      4092
+   
    macro avg       0.49      0.50      0.39      4092
+
 weighted avg       0.50      0.55      0.43      4092
 
 
@@ -115,7 +119,9 @@ when I sliced the data to input new pramaters of short 7 days and 50 days, we wh
          1.0       0.64      1.00      0.78        38
 
     accuracy                           0.64        59
+   
    macro avg       0.32      0.50      0.39        59
+
 weighted avg       0.41      0.64      0.50        59
 
 
@@ -129,6 +135,8 @@ unfortunatley when I chose logistic Regression, the didnt change much from the o
          1.0       0.56      0.66      0.61      2288
          
     accuracy                           0.52      4092
+   
    macro avg       0.50      0.50      0.49      4092
+
 weighted avg       0.51      0.52      0.51      4092
 
