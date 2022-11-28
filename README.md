@@ -59,9 +59,22 @@ In this section, you’ll tune, or adjust, the model’s input features to find 
 
 1. Tune the training algorithm by adjusting the size of the training dataset. To do so, slice your data into different periods. Rerun the notebook with the updated parameters, and record the results in your `README.md` file. Answer the following question: What impact resulted from increasing or decreasing the training window?
 
-    > **Hint** To adjust the size of the training dataset, you can use a different `DateOffset` value&mdash;for example, six months. Be aware that changing the size of the training dataset also affects the size of the testing dataset.
 
 2. Tune the trading algorithm by adjusting the SMA input features. Adjust one or both of the windows for the algorithm. Rerun the notebook with the updated parameters, and record the results in your `README.md` file. Answer the following question: What impact resulted from increasing or decreasing either or both of the SMA windows?
+
+Answer: when I changed the window of the sma prameters to 7 for short and 50 for long, we achieved a recall of 1. Which improved by adittional 4%. 
+
+
+precision    recall  f1-score   support
+
+         0.0       0.00      0.00      0.00        21
+         1.0       0.64      1.00      0.78        38
+
+    accuracy                           0.64        59
+   macro avg       0.32      0.50      0.39        59
+weighted avg       0.41      0.64      0.50        59
+
+
 
 3. Choose the set of parameters that best improved the trading algorithm returns. Save a PNG image of the cumulative product of the actual returns vs. the strategy returns, and document your conclusion in your `README.md` file.
 
@@ -78,3 +91,45 @@ In this section, you’ll use the original parameters that the starter code prov
 ### Create an Evaluation Report
 
 In the previous sections, you updated your `README.md` file with your conclusions. To accomplish this section, you need to add a summary evaluation report at the end of the `README.md` file. For this report, express your final conclusions and analysis. Support your findings by using the PNG images that you created.
+
+our first orginal model with short window of 4 days and long window of 100 days,and the model produced a recall value of 96%. Thus making the chosen SMA pramateres a strong model. 
+
+    
+    
+    precision    recall  f1-score   support
+
+        -1.0       0.43      0.04      0.07      1804
+         1.0       0.56      0.96      0.71      2288
+
+    accuracy                           0.55      4092
+   macro avg       0.49      0.50      0.39      4092
+weighted avg       0.50      0.55      0.43      4092
+
+
+
+when I sliced the data to input new pramaters of short 7 days and 50 days, we where able to achieve a 100% which again can make this model a stron one. 
+
+
+precision    recall  f1-score   support
+
+         0.0       0.00      0.00      0.00        21
+         1.0       0.64      1.00      0.78        38
+
+    accuracy                           0.64        59
+   macro avg       0.32      0.50      0.39        59
+weighted avg       0.41      0.64      0.50        59
+
+
+
+
+unfortunatley when I chose logistic Regression, the recall value fail by 40% hence making it the weeker model.
+
+     precision    recall  f1-score   support
+
+        -1.0       0.44      0.33      0.38      1804
+         1.0       0.56      0.66      0.61      2288
+
+    accuracy                           0.52      4092
+   macro avg       0.50      0.50      0.49      4092
+weighted avg       0.51      0.52      0.51      4092
+
