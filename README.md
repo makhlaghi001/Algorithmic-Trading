@@ -110,7 +110,7 @@ weighted avg       0.50      0.55      0.43      4092
 when I sliced the data to input new pramaters of short 7 days and 50 days, we where able to achieve a 100% which again can make this model a stron one. 
 
 
-precision    recall  f1-score   support
+     precision    recall  f1-score   support
 
          0.0       0.00      0.00      0.00        21
          1.0       0.64      1.00      0.78        38
