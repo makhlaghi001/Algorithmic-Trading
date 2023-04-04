@@ -1,4 +1,4 @@
-### Assignment 14 
+Algorythmic Trading
 ## Background
 
 In this Challenge, I have assumed the role of a financial advisor at one of the top five financial advisory firms in the world. Our firm constantly competes with the other major firms to manage and automatically trade assets in a highly dynamic environment. In recent years, our firm has heavily profited by using computer algorithms that can buy and sell faster than human traders.
